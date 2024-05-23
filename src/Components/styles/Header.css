@@ -1,0 +1,131 @@
+.header {
+    width: 100%;          /* The header will span the full width of its container */
+    display: flex;        /* Flexbox layout is used for the header's children */
+    align-items: center;  /* Vertically centers the items within the header */
+    position: absolute;   /* Positions the header absolutely within its containing element */
+    z-index: 1;           /* Ensures the header is on top of other elements with a lower z-index */
+}
+
+.header-logo {
+    margin-left: 20rem;
+}
+
+.navbar {
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    li {
+        list-style: none;
+        margin: 1.2rem;
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+        }
+
+        &:hover {
+            border-bottom:3px solid purple;
+        }
+    }
+}
+
+.changer {
+    display: flex;
+    margin: 1.5rem;
+
+    .menu {
+        cursor: pointer;
+        margin-right: 1rem;
+        display: none;
+    }
+}
+
+.closed{
+    .close {
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: none;
+        transition: 1s ease;
+    }
+
+    .navbar :active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        inset: 0;
+        background-color: aliceblue;
+        transition: 1400ms ease;
+    }
+
+    ul {
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        
+        li {
+            margin-block: 2rem;
+
+            a {
+                font-size: 20px;
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .changer {
+        .menu {
+            display: block;
+        }
+    }
+
+    .closed {
+        .close {
+            display: block;
+        }
+
+        .header-logo {
+            margin-left: .450rem;
+        }
+    }
+
+    @media(max-width: 350px) {
+        ul {
+            margin: 0 auto;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 1rem;
+            
+            li {
+                margin-block: 2rem;
+    
+                a {
+                    font-size: 20px;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .changer {
+            .menu {
+                display: block;
+                margin-right: 0;
+            }
+        }
+    }
+}
