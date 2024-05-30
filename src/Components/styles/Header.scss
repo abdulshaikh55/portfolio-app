@@ -1,18 +1,27 @@
+@import 'variables';
 .header {
-    width: 100%;          /* The header will span the full width of its container */
-    display: flex;        /* Flexbox layout is used for the header's children */
-    align-items: center;  /* Vertically centers the items within the header */
-    position: absolute;   /* Positions the header absolutely within its containing element */
-    z-index: 1;           /* Ensures the header is on top of other elements with a lower z-index */
+    width: 100%;          
+    display: flex;     
+    align-items: center; 
+    position: fixed;  
+    z-index: 120; 
+    color: $primary-color;
 }
 
+.header .active {
+    background-color: $other-color;
+}
+
+
 .header-logo {
-    margin-left: 20rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .navbar {
     margin: 0 auto;
 }
+
 
 ul {
     display: flex;
@@ -20,15 +29,17 @@ ul {
         list-style: none;
         margin: 1.2rem;
 
-        a {
+        b {
             text-decoration: none;
             text-transform: uppercase;
-            color: black;
+            color: $primary-color;
+
+            &:hover {
+                color: $secondary-color;
+            }
         }
 
-        &:hover {
-            border-bottom:3px solid purple;
-        }
+        
     }
 }
 
@@ -46,6 +57,11 @@ ul {
 .closed{
     .close {
         display: none;
+        cursor: pointer;
+    }
+
+    .close .active {
+        color: $primary-color;
     }
 }
 

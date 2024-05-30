@@ -1,6 +1,6 @@
 import React from 'react'
 import {ArrowBack} from '@mui/icons-material';
-import './styles/Contact.css';
+import './styles/Contact.scss';
 import { Link } from "react-router-dom";
 
 
