@@ -1,7 +1,8 @@
 import React from "react";
 import "./styles/About.scss";
+import portfolio_main from '../assets/portfolio_main.jpg'
 
-const Section = () => {
+export default function About() {
   return (
     <div className="sections">
       <div className="sections-container">
@@ -28,22 +29,14 @@ const Section = () => {
             breadth of skills deeply, atleast in my experience.
             <br />
             <br /> I am also doing an internship in XYZ company. That internship
-            is about web development.
+            is about web development. I like working in a small organization as the environment is intimate and friendly, and the work being done is fast and high quality.
           </p>
         </section>
-        <section className="skills">
-          <h2>My Skills</h2>
-          <p>Web development</p>
-          <p>Rust</p>
-          <p>C++</p>
-          <p>C</p>
-          <p>Python</p>
-          <p>Java</p>
-          <p>Techincal Writing</p>
+        <section className="image">
+          <img src={portfolio_main} alt="Abdulfaiz's pic by his brother" />
         </section>
       </div>
     </div>
   );
 };
 
-export default Section;

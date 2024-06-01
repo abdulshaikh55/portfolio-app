@@ -30,14 +30,65 @@
         font-size: $p-font;
     }
 
-    .skills {
-        margin: 5rem 3rem;
-        text-align: right;
-        font-size: $p-font;
+    .image {
+        margin-top: 5rem;
 
-        p {
-            font-size: 1.5rem;
-            padding-bottom: 0.5rem;
+        img {
+            width: 400px;
+
         }
+    }
+}
+
+@media (max-width: 1050px) {
+    .sections-container {
+        gap: 2rem;
+
+        .about-me {
+            margin: 5rem 3rem;
+            margin-right: 2rem;
+            text-align: left;
+            font-size: $p-font;
+        }
+
+        .image {
+
+            img {
+                width: 400px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .sections-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+
+        .image {
+            margin: 1rem;
+
+            img {
+
+                width: 500px;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .sections-container {
+        gap: 2rem;
+
+        .about-me {
+            margin: 5rem 3rem;
+            margin-right: 2rem;
+            text-align: left;
+            font-size: $p-font;
+        }
+
+
     }
 }

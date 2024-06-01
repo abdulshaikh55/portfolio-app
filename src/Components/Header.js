@@ -3,13 +3,11 @@ import "./styles/Header.scss";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 import { Link } from "react-router-dom";
-import Main from "./Main";
-import About from "./About";
 
 const Header = () => {
   const [active, setActive] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false); // New state for menu
+  const [menuOpen, setMenuOpen] = useState(false);  // New state for menu
 
   const showMenu = () => {
     setMenuOpen(!menuOpen);
@@ -48,14 +46,14 @@ const Header = () => {
           </div>
           <li>
             {" "}
-            <Link to={Main}>
+            <Link to='./Main'>
               {" "}
               <b>Home</b>{" "}
             </Link>{" "}
           </li>
           <li>
             {" "}
-            <Link to={About}>
+            <Link to="./About">
               {" "}
               <b>About</b>{" "}
             </Link>{" "}
