@@ -1,0 +1,43 @@
+@import "variables";
+
+.sections {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    position: static;
+    background: $bg-color;
+}
+
+.sections-container {
+    color: $primary-color;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    h2 {
+        color: $other-color;
+        font-size: $h2-font;
+        padding-bottom: 0.7rem;
+    }
+
+    a {
+        color: $link-color;
+    }
+
+    .about-me {
+        margin: 5rem 3rem;
+        text-align: left;
+        font-size: $p-font;
+    }
+
+    .skills {
+        margin: 5rem 3rem;
+        text-align: right;
+        font-size: $p-font;
+
+        p {
+            font-size: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+    }
+}

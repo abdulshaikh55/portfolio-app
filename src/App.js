@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import Main from './Components/Main';
-import Section from './Components/Section';
+import About from './Components/About';
 import Contact from './Components/Contact';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
         <Header/>
         <Main/>
-        <Section/>
+        <About/>
         <Contact/>
     </div>
   );
