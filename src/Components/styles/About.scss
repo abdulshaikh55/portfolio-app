@@ -5,11 +5,11 @@
     height: 100vh;
     justify-content: space-between;
     position: static;
-    background: $bg-color;
+    background: $primary-color;
 }
 
 .sections-container {
-    color: $primary-color;
+    color: $secondary-color;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
@@ -22,10 +22,14 @@
 
     a {
         color: $link-color;
+
+        &:hover {
+            color: $other-color;
+        }
     }
 
     .about-me {
-        margin: 5rem 3rem;
+        margin: 4rem 1.7rem 0 5rem;
         text-align: left;
         font-size: $p-font;
     }
@@ -35,12 +39,16 @@
 
         img {
             width: 400px;
-
+            border-radius: 1.5rem;
         }
     }
 }
 
 @media (max-width: 1050px) {
+    .sections {
+        height: 120vh;
+    }
+
     .sections-container {
         gap: 2rem;
 
@@ -62,6 +70,10 @@
 }
 
 @media (max-width: 768px) {
+    .sections {
+        height: 220vh;
+    }
+
     .sections-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
@@ -75,20 +87,5 @@
 
             }
         }
-    }
-}
-
-@media (max-width: 1050px) {
-    .sections-container {
-        gap: 2rem;
-
-        .about-me {
-            margin: 5rem 3rem;
-            margin-right: 2rem;
-            text-align: left;
-            font-size: $p-font;
-        }
-
-
     }
 }

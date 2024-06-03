@@ -4,7 +4,7 @@ import portfolio_main from '../assets/portfolio_main.jpg'
 
 export default function About() {
   return (
-    <div className="sections">
+    <div className="sections" id="about">
       <div className="sections-container">
         <section className="about-me">
           <h2>About Me</h2>

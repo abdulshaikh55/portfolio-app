@@ -5,7 +5,7 @@ import anna from '../assets/anna.jpg'
 
 export default function Main() {
     return (
-        <div className="main">
+        <div className="main" id="main">
             <div className="main-container">
                 <div className="main-img">
                     <img src={anna} alt="Abdulfaiz Candid pic by Aryan Shinde" />

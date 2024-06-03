@@ -3,6 +3,7 @@ import "./styles/Header.scss";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 import { Link } from "react-router-dom";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -46,23 +47,23 @@ const Header = () => {
           </div>
           <li>
             {" "}
-            <Link to='./Main'>
+            <AnchorLink href='#main'>
               {" "}
               <b>Home</b>{" "}
-            </Link>{" "}
+            </AnchorLink>{" "}
           </li>
           <li>
             {" "}
-            <Link to="./About">
+            <AnchorLink href="#about">
               {" "}
               <b>About</b>{" "}
-            </Link>{" "}
+            </AnchorLink>{" "}
           </li>
           <li>
             {" "}
             <Link to="/">
               {" "}
-              <b>Portfolio</b>{" "}
+              <b>Projects</b>{" "}
             </Link>{" "}
           </li>
           <li>
