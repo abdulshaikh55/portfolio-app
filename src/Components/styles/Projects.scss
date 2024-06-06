@@ -26,10 +26,6 @@
         border-radius: 1.5rem;
         background-color: $secondary-color;
 
-        a {
-            text-decoration: none;
-        }
-
         h3 {
             font-size: 20px;
             margin: 5px;
@@ -42,7 +38,7 @@
         }
 
         .description {
-            font-size: $p-font;
+            font-size: 19px;
             margin-bottom: 1.1rem;
             color: $primary-color;
         }
@@ -59,8 +55,18 @@
                 background-color: $primary-color;
                 color: white;
                 padding: 0.5rem 1rem;
-                border-radius: 0.5rem;
+                border-radius: 0.6rem;
                 margin: 0;
+            }
+        }
+
+        .info {
+            margin-bottom: 1rem;
+            text-align: left;
+            font-size: $p-font;
+
+            span {
+                font-weight: 500;
             }
         }
 
