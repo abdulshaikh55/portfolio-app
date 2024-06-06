@@ -1,38 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./styles/Header.scss";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuBookOutlinedIcon from "@mui/icons-material/MenuBookOutlined";
 import { Link } from "react-router-dom";
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = () => {
-  const [active, setActive] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);  // New state for menu
 
   const showMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const changeBackground = () => {
-    if (window.scrollY > 0) {
-      // Set scrolled to true if scrolled even a bit
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
-
-    return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
-  }, []);
-
   return (
-    <div className={scrolled ? "header active" : "header"}>
+    <div className="header">
       <div className="header-logo">
         <h1>Abdulfaiz Shaikh</h1>
       </div>
@@ -41,7 +22,7 @@ const Header = () => {
         <ul>
           <div className="closed">
             <CloseIcon
-              className={active ? "close active" : "close"}
+              className="close"
               onClick={showMenu}
             ></CloseIcon>
           </div>
@@ -61,10 +42,10 @@ const Header = () => {
           </li>
           <li>
             {" "}
-            <Link to="/">
+            <AnchorLink href="#projects">
               {" "}
               <b>Projects</b>{" "}
-            </Link>{" "}
+            </AnchorLink>{" "}
           </li>
           <li>
             {" "}

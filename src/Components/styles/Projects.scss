@@ -1,4 +1,68 @@
+@import 'variables';
+
 .projects {
-  height: 100vh;
-  position: static;
+    align-items: center;
+    background-color: $bg-color;
+}
+
+.project-header {
+    h2 {
+        color: $other-color;
+        font-size: $h2-font;
+        padding: 0.7rem;
+        padding-top: 2.5rem;
+    }
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    text-decoration: none;
+
+    .project {
+        position: relative;
+        padding: 1.5rem;
+        margin: 1.5rem 2rem;
+        border-radius: 1.5rem;
+        background-color: $secondary-color;
+
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            font-size: 20px;
+            margin: 5px;
+            color: $primary-color;
+        }
+
+        img {
+            width: 85%;
+            margin: 5px
+        }
+
+        .description {
+            font-size: $p-font;
+            margin-bottom: 1.1rem;
+            color: $primary-color;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            padding: 0;
+            list-style: none;
+
+            li {
+                text-align: center;
+                background-color: $primary-color;
+                color: white;
+                padding: 0.5rem 1rem;
+                border-radius: 0.5rem;
+                margin: 0;
+            }
+        }
+
+    }
 }

@@ -6,7 +6,8 @@
     background-color: $bg-color;
     position: relative;
 
-    &::before, &::after {
+    &::before,
+    &::after {
         content: '';
         position: absolute;
         left: 0;
@@ -36,6 +37,7 @@
 .main-img {
     clip-path: circle(47% at 49% 47%);
     margin-left: 8%;
+
     img {
         width: 300px;
         background: linear-gradient(45deg, rgb(216, 46, 8), rgb(62, 7, 189));
@@ -45,7 +47,7 @@
 .text {
     line-height: 55px;
     text-align: center;
-    
+
     p {
         color: #011502;
         text-transform: uppercase;
@@ -84,6 +86,7 @@
             transform: scale(1.2) translateY(6px);
         }
     }
+
     .github {
         margin-top: 1rem;
         margin-right: 1.4rem;
@@ -97,6 +100,7 @@
             transform: scale(1.2) translateY(6px);
         }
     }
+
     .instagram {
         margin-top: 1rem;
         margin-right: 1.4rem;
@@ -106,7 +110,21 @@
         transition: all .30s ease;
 
         &:hover {
-            color: rgb(214,41,118);
+            color: rgb(214, 41, 118);
+            transform: scale(1.2) translateY(6px);
+        }
+    }
+
+    .email {
+        margin-top: 1rem;
+        font-size: 35px;
+        cursor: pointer;
+        color: rgb(157, 155, 155);
+        transition: all .30s ease;
+        text-decoration: none;
+
+        &:hover {
+            color: #34a853;
             transform: scale(1.2) translateY(6px);
         }
     }
@@ -156,6 +174,7 @@
 
     .icons {
         margin-right: 1rem;
+
         .icon {
             font-size: 25px;
         }
