@@ -1,0 +1,124 @@
+@import './variables';
+
+.articles {
+    background-color: $bg-color;
+}
+
+.article-header {
+    text-align: left;
+
+    h2 {
+        margin-left: 3rem;
+        color: $other-color;
+        font-size: $h2-font;
+        padding: 0.7rem;
+        padding-top: 2.5rem;
+    }
+
+    @media (max-width: 1200px) {
+        h2 {
+            font-size: 1.8rem;
+            padding-top: 2rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        h2 {
+            font-size: 1.5rem;
+            padding-top: 1.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.2rem;
+            padding-top: 1rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        h2 {
+            font-size: 1rem;
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+.article {
+    position: relative;
+    text-align: left;
+    padding: 1.5rem;
+    margin: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    background-color: $primary-color;
+
+    h3 {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    @media (max-width: 1200px) {
+        h3 {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h3 {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        h3 {
+            font-size: 12px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $link-color;
+
+        &:hover {
+            color: $other-color;
+        }
+    }
+
+    .info {
+        color: $secondary-color;
+        margin-bottom: 1rem;
+        text-align: left;
+        font-size: $p-font;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding: 1.2rem;
+        margin: 1.2rem;
+    }
+
+    @media (max-width: 992px) {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.8rem;
+        margin: 0.8rem;
+    }
+
+    @media (max-width: 576px) {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+}

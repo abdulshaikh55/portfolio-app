@@ -24,12 +24,11 @@ export default function About() {
             <br />
             <br /> I also contribute to open source projects, mostly on my own
             and various Rust related repos. I think contributing to open source
-            has taught me alot about the field of Software Engineering, as the
+            has taught me a lot about the field of Software Engineering, as the
             maintainers of these repos are experienced and you get to learn a
-            breadth of skills deeply, atleast in my experience.
+            breadth of skills deeply, at least in my experience.
             <br />
-            <br /> I am also doing an internship in XYZ company. That internship
-            is about web development. I like working in a small organization as the environment is intimate and friendly, and the work being done is fast and high quality.
+            <br />I like working in a small organization as the environment is intimate and friendly, and the work being done is fast and high quality.
           </p>
         </section>
         <section className="image">

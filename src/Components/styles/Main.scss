@@ -160,28 +160,28 @@
         line-height: 30px;
 
         p {
-            font-size: 14px;
+            font-size: 18px;
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 40px;
         }
     }
 
     .buttons button {
-        padding: 8px 20px;
+        padding: 10px 30px;
     }
 
     .icons {
         margin-right: 1rem;
 
         .icon {
-            font-size: 25px;
+            font-size: 30px;
         }
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 992px) {
     .main-content {
         margin-left: 0;
     }
@@ -198,12 +198,79 @@
 
     .text {
         h1 {
-            font-size: 23px;
+            font-size: 35px;
         }
 
         p {
-            color: #000;
-            font-size: 11px;
+            font-size: 16px;
+        }
+    }
+
+    .icons {
+        margin-left: 1.5rem;
+
+        .icon {
+            color: rgb(102, 51, 153);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+
+    .main-container {
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .main-img img {
+        width: 200px;
+    }
+
+    .text {
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .icons {
+        margin-left: 1.5rem;
+
+        .icon {
+            color: rgb(102, 51, 153);
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .main-content {
+        margin-left: 0;
+    }
+
+    .main-container {
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .main-img img {
+        width: 150px;
+    }
+
+    .text {
+        h1 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 12px;
         }
     }
 

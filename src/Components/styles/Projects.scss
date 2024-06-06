@@ -6,11 +6,34 @@
 }
 
 .project-header {
+    text-align: left;
+
     h2 {
+        margin-left: 3rem;
         color: $other-color;
         font-size: $h2-font;
         padding: 0.7rem;
         padding-top: 2.5rem;
+
+        @media (max-width: 1200px) {
+            font-size: 1.8rem;
+            padding-top: 2rem;
+        }
+
+        @media (max-width: 992px) {
+            font-size: 1.5rem;
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 1.2rem;
+            padding-top: 1rem;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 1rem;
+            padding-top: 0.5rem;
+        }
     }
 }
 
@@ -30,17 +53,66 @@
             font-size: 20px;
             margin: 5px;
             color: $primary-color;
+
+            @media (max-width: 1200px) {
+                font-size: 18px;
+            }
+
+            @media (max-width: 992px) {
+                font-size: 16px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 12px;
+            }
         }
 
         img {
             width: 85%;
-            margin: 5px
+            margin: 5px;
+
+            @media (max-width: 1200px) {
+                width: 80%;
+            }
+
+            @media (max-width: 992px) {
+                width: 75%;
+            }
+
+            @media (max-width: 768px) {
+                width: 70%;
+            }
+
+            @media (max-width: 576px) {
+                width: 65%;
+            }
         }
 
         .description {
-            font-size: 19px;
+            font-size: $p-font;
+            font-weight: 500;
             margin-bottom: 1.1rem;
             color: $primary-color;
+
+            @media (max-width: 1200px) {
+                font-size: 17px;
+            }
+
+            @media (max-width: 992px) {
+                font-size: 15px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 11px;
+            }
         }
 
         ul {
@@ -57,6 +129,22 @@
                 padding: 0.5rem 1rem;
                 border-radius: 0.6rem;
                 margin: 0;
+
+                @media (max-width: 1200px) {
+                    padding: 0.4rem 0.8rem;
+                }
+
+                @media (max-width: 992px) {
+                    padding: 0.3rem 0.6rem;
+                }
+
+                @media (max-width: 768px) {
+                    padding: 0.2rem 0.4rem;
+                }
+
+                @media (max-width: 576px) {
+                    padding: 0.1rem 0.2rem;
+                }
             }
         }
 
@@ -67,6 +155,22 @@
 
             span {
                 font-weight: 500;
+            }
+
+            @media (max-width: 1200px) {
+                font-size: 17px;
+            }
+
+            @media (max-width: 992px) {
+                font-size: 15px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 11px;
             }
         }
 
