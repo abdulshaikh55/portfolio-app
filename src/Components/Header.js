@@ -6,19 +6,32 @@ import { Link } from "react-router-dom";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);  // New state for menu
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // change nav color when scrolling
+  const [scrolling, setScrolling] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 75) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeColor);
 
   const showMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   return (
-    <div className="header">
+    <div className={scrolling ? 'header active' : 'header'}>
       <div className="header-logo">
         <h1>Abdulfaiz Shaikh</h1>
       </div>
 
-      <nav className={`navbar ${menuOpen ? "active" : ""}`}>
+      <nav className='navbar'>
         <ul>
           <div className="closed">
             <CloseIcon
@@ -27,39 +40,19 @@ const Header = () => {
             ></CloseIcon>
           </div>
           <li>
-            {" "}
-            <AnchorLink href='#main'>
-              {" "}
-              <b>Home</b>{" "}
-            </AnchorLink>{" "}
+            <AnchorLink href='#main'><b>Home</b></AnchorLink>
           </li>
           <li>
-            {" "}
-            <AnchorLink href="#about">
-              {" "}
-              <b>About</b>{" "}
-            </AnchorLink>{" "}
+            <AnchorLink href="#about"><b>About</b></AnchorLink>
           </li>
           <li>
-            {" "}
-            <AnchorLink href="#projects">
-              {" "}
-              <b>Projects</b>{" "}
-            </AnchorLink>{" "}
+            <AnchorLink href="#projects"><b>Projects</b></AnchorLink>
           </li>
           <li>
-            {" "}
-            <Link to="/">
-              {" "}
-              <b>Articles</b>{" "}
-            </Link>{" "}
+            <AnchorLink href="#articles"><b>Articles</b></AnchorLink>
           </li>
           <li>
-            {" "}
-            <Link to="/">
-              {" "}
-              <b>Contact</b>{" "}
-            </Link>{" "}
+            <Link to="#main"><b>Contact</b></Link>
           </li>
         </ul>
       </nav>
