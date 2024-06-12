@@ -8,13 +8,14 @@
     z-index: 120;
     color: $primary-color;
     transition: all .50s ease;
+    padding: 0 10px;
 }
 
 .active {
     transition: all .50s ease;
     background: transparent;
     backdrop-filter: blur(20px);
-    background-image: linear-gradient(120deg, rgba(32, 32, 32, 0.6), rgba(255, 104, 68, 0.7));
+    background-image: linear-gradient(120deg, rgba(32, 32, 32, 0.6), rgba(255, 105, 68, 0.613));
     color: $bg-color;
 
     b {
@@ -24,8 +25,8 @@
 
 
 .header-logo {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 12%;
+    margin-right: 10%;
 }
 
 .navbar {
@@ -79,25 +80,43 @@ ul {
     }
 }
 
+@media (max-width: 1200px) {
+    .header-logo {
+        font-size: medium;
+    }
 
-@media (max-width: 800px) {
+
+}
+
+@media (max-width: 1090px) {
+    .header-logo {
+        margin: 0 5%;
+    }
+
+
+}
+
+@media (max-width: 970px) {
+    .header-logo {
+        font-size: small;
+    }
+
+}
+
+@media (max-width: 920px) {
+
     .header {
         justify-content: space-between;
     }
 
     .navbar {
-        display: none;
-        transition: 1s ease;
-    }
+        transition: max-height 0.5s ease-out;
+        overflow: hidden;
+        max-height: 0;
 
-    .navbar :active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        inset: 0;
-        background-color: aliceblue;
-        transition: 1400ms ease;
+        &.open {
+            max-height: 500px;
+        }
     }
 
     ul {
@@ -119,6 +138,7 @@ ul {
 
     .changer {
         .menu {
+            cursor: pointer;
             display: block;
         }
     }
@@ -126,10 +146,6 @@ ul {
     .closed {
         .close {
             display: block;
-        }
-
-        .header-logo {
-            margin-left: .450rem;
         }
     }
 }

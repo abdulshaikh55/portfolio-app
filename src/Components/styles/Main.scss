@@ -31,7 +31,6 @@
 
 .main-content {
     margin-right: 8%;
-    align-items: center;
 }
 
 .main-img {
@@ -40,7 +39,6 @@
 
     img {
         width: 300px;
-        background: linear-gradient(45deg, rgb(216, 46, 8), rgb(62, 7, 189));
     }
 }
 
@@ -154,131 +152,12 @@
     background: rgb(102, 51, 153);
 }
 
-@media (max-width: 1200px) {
-    .text {
-        white-space: nowrap;
-        line-height: 30px;
+@media (max-width: 100px) {
 
-        p {
-            font-size: 18px;
-        }
 
-        h1 {
-            font-size: 40px;
-        }
-    }
-
-    .buttons button {
-        padding: 10px 30px;
-    }
-
-    .icons {
-        margin-right: 1rem;
-
-        .icon {
-            font-size: 30px;
-        }
-    }
-}
-
-@media (max-width: 992px) {
-    .main-content {
-        margin-left: 0;
-    }
-
-    .main-container {
-        text-align: center;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    .main-img img {
-        width: 250px;
-    }
-
-    .text {
-        h1 {
-            font-size: 35px;
-        }
-
-        p {
-            font-size: 16px;
-        }
-    }
-
-    .icons {
-        margin-left: 1.5rem;
-
-        .icon {
-            color: rgb(102, 51, 153);
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .main-content {
-        margin-left: 0;
-    }
-
-    .main-container {
-        text-align: center;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    .main-img img {
-        width: 200px;
-    }
-
-    .text {
-        h1 {
-            font-size: 30px;
-        }
-
-        p {
-            font-size: 14px;
-        }
-    }
-
-    .icons {
-        margin-left: 1.5rem;
-
-        .icon {
-            color: rgb(102, 51, 153);
-        }
-    }
-}
-
-@media (max-width: 576px) {
-    .main-content {
-        margin-left: 0;
-    }
-
-    .main-container {
-        text-align: center;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    .main-img img {
-        width: 150px;
-    }
-
-    .text {
-        h1 {
-            font-size: 25px;
-        }
-
-        p {
-            font-size: 12px;
-        }
-    }
-
-    .icons {
-        margin-left: 1.5rem;
-
-        .icon {
-            color: rgb(102, 51, 153);
+    .main-img {
+        img {
+            width: 270px;
         }
     }
 }

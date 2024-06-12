@@ -6,9 +6,12 @@ import { Link } from "react-router-dom";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  // change nav color when scrolling
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
   const [scrolling, setScrolling] = useState(false);
 
   const changeColor = () => {
@@ -21,22 +24,18 @@ const Header = () => {
 
   window.addEventListener("scroll", changeColor);
 
-  const showMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
   return (
     <div className={scrolling ? 'header active' : 'header'}>
       <div className="header-logo">
         <h1>Abdulfaiz Shaikh</h1>
       </div>
 
-      <nav className='navbar'>
+      <nav className={`navbar ${isOpen ? 'open' : ''}`}>
         <ul>
           <div className="closed">
             <CloseIcon
               className="close"
-              onClick={showMenu}
+              onClick={toggleNavbar}
             ></CloseIcon>
           </div>
           <li>
@@ -57,8 +56,8 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className="changer">
-        <MenuBookOutlinedIcon className="menu" onClick={showMenu} />
+      <div className="changer" >
+        <MenuBookOutlinedIcon className="menu" onClick={toggleNavbar} />
       </div>
     </div>
   );
