@@ -11,6 +11,7 @@ export default function Main() {
         <div className="main-img">
           <img src={anna} alt="Abdulfaiz Candid pic by Aryan Shinde" />
         </div>
+
         <div className="main-content">
           <div className="text">
             <p>Hello Everyone!</p>
@@ -38,9 +39,7 @@ export default function Main() {
           </div>
 
         </div>
-
       </div>
-
     </div>
   )
 }

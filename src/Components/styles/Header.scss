@@ -84,27 +84,21 @@ ul {
     .header-logo {
         font-size: medium;
     }
-
-
 }
 
 @media (max-width: 1090px) {
     .header-logo {
         margin: 0 5%;
     }
-
-
 }
 
 @media (max-width: 970px) {
     .header-logo {
         font-size: small;
     }
-
 }
 
 @media (max-width: 920px) {
-
     .header {
         justify-content: space-between;
     }
@@ -146,50 +140,6 @@ ul {
     .closed {
         .close {
             display: block;
-        }
-    }
-}
-
-@media (max-width: 600px) {
-    .header {
-        font-size: 1rem;
-    }
-
-    ul {
-        margin: 0 1rem;
-    }
-
-    li {
-        margin: 1rem;
-    }
-
-    .changer {
-        margin: 1rem;
-    }
-}
-
-@media (max-width: 350px) {
-    ul {
-        margin: 0 auto;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 1rem;
-
-        li {
-            margin-block: 2rem;
-
-            a {
-                font-size: 18px;
-                color: black;
-                font-weight: bold;
-            }
-        }
-    }
-
-    .changer {
-        .menu {
-            display: block;
-            margin-right: 0;
         }
     }
 }
