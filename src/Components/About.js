@@ -14,7 +14,7 @@ export default function About() {
             <br />
             <br />
             My day is spent learning Programming & Software Engineering and
-            applying those learning into making projects. My favorite
+            applying those learnings into making projects. My favorite
             programming language is Rust. I have done numerous small projects in
             Rust and a{" "}
             <a href="https://www.github.com/abdulshaikh55/task_manager/">

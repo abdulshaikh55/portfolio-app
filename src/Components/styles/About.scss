@@ -2,7 +2,6 @@
 
 .sections {
     display: flex;
-    height: 100vh;
     justify-content: space-between;
     position: static;
     background: $primary-color;
@@ -30,26 +29,22 @@
     }
 
     .about-me {
-        margin: 4rem 1.7rem 0 5rem;
+        margin: 4rem 1.7rem 4rem 5rem;
         text-align: left;
-        font-size: $p-font;
+        font-size: 20px;
     }
 
     .image {
         margin-top: 5rem;
 
         img {
-            width: 400px;
+            width: 420px;
             border-radius: 1.5rem;
         }
     }
 }
 
-@media (max-width: 1050px) {
-    .sections {
-        height: 120vh;
-    }
-
+@media (max-width: 1200px) {
     .sections-container {
         gap: 2rem;
 
@@ -57,7 +52,7 @@
             margin: 5rem 3rem;
             margin-right: 2rem;
             text-align: left;
-            font-size: $p-font;
+            font-size: 19px;
         }
 
         .image {
@@ -70,22 +65,26 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     .sections {
-        height: 220vh;
+        display: block;
     }
 
     .sections-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
 
+        .about-me {
+            font-size: 20px;
+            margin-bottom: 1rem;
+        }
+
         .image {
             margin: 1rem;
+            margin-bottom: 3rem;
 
             img {
-
                 width: 500px;
-
             }
         }
     }
