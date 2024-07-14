@@ -11,7 +11,8 @@
     padding: 0 10px;
 }
 
-.active {
+.active,
+.open {
     transition: all .50s ease;
     background: transparent;
     backdrop-filter: blur(20px);
@@ -135,6 +136,10 @@ ul {
             cursor: pointer;
             display: block;
         }
+    }
+
+    .is-open {
+        display: none;
     }
 
     .closed {

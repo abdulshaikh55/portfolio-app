@@ -5,7 +5,7 @@ import Main from './Components/Main';
 import About from './Components/About';
 import Contact from './Components/Contact';
 import Projects from './Components/Projects';
-import Articles from './Components/Articles';
+import Miscellaneous from './Components/Miscellaneous';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Main />
       <About />
       <Projects />
-      <Articles />
+      <Miscellaneous />
       <Contact />
     </div>
   );
