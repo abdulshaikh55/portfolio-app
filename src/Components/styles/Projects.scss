@@ -19,7 +19,7 @@
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
     text-decoration: none;
 
     .project {
@@ -68,18 +68,14 @@
                 margin: 0;
             }
         }
-
-        .info {
-            margin-bottom: 1rem;
-            text-align: left;
-            font-size: 18px;
-
-            span {
-                font-weight: 500;
-            }
-        }
     }
 }
+
+// TODO: figure out if there is a need for 1200x media
+// TODO: if there is, what would be the behavior of image in every project.
+// TODO: is there even a need for a project? there is.
+
+@media (max-width: 1200px) {}
 
 @media (max-width: 1090px) {
 
@@ -111,3 +107,5 @@
         }
     }
 }
+
+@media (max-width: 920px) {}
