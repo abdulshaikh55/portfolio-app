@@ -2,7 +2,7 @@ import React from "react";
 import './styles/Main.scss';
 import { GitHub, LinkedIn, Instagram } from '@mui/icons-material';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import anna from '../assets/anna.jpg'
+import anna from '../assets/anna.png'
 
 export default function Main() {
   return (

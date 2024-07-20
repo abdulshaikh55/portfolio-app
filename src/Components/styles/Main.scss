@@ -2,10 +2,10 @@
 
 .main {
     min-height: 100vh;
-    width: 100vw; // Ensure the main container takes the full viewport width
+    width: 100vw;
     background-color: $bg-color;
     position: relative;
-    overflow-x: hidden; // Prevent horizontal overflow
+    overflow-x: hidden;
 
     &::before,
     &::after {
@@ -28,11 +28,10 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
-    width: 100%; // Ensure the container takes the full width
+    width: 100%;
 }
 
 .main-img {
-    clip-path: circle(47% at 49% 47%);
     margin-left: 8%;
 
     img {
@@ -226,12 +225,23 @@
 @media (max-width: 640px) {
     .main-container {
         flex-direction: column;
-        width: 100%; // Ensure the container takes the full width
+        width: 100%;
+
+        justify-content: center;
     }
 
     .main-img,
     .main-content {
-        width: 100%; // Make them full width to stack vertically
+        width: 100%;
+        margin-right: 0;
+    }
 
+    .main-img {
+        margin-top: 20px;
+        margin-left: 0;
+
+        img {
+            width: 225px;
+        }
     }
 }
