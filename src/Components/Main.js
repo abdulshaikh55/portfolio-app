@@ -18,7 +18,7 @@ export default function Main() {
             <h1 className="introduction">
               I am Faiz
             </h1>
-            <p>B. Tech CSE, Final Year</p>
+            <p classsName='text'>B. Tech CSE, Final Year</p>
 
             <div className="icons">
               <a href="https://www.linkedin.com/in/abdulshaikh55/" target="_blank" rel="noopener noreferrer">

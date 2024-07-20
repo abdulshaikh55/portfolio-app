@@ -2,9 +2,10 @@
 
 .main {
     min-height: 100vh;
-    max-width: 100%;
+    width: 100vw; // Ensure the main container takes the full viewport width
     background-color: $bg-color;
     position: relative;
+    overflow-x: hidden; // Prevent horizontal overflow
 
     &::before,
     &::after {
@@ -27,6 +28,7 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
+    width: 100%; // Ensure the container takes the full width
 }
 
 .main-img {
@@ -179,5 +181,57 @@
         img {
             width: 280px;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .main-img {
+        img {
+            width: 250px;
+        }
+    }
+
+    .main-content {
+
+        .text {
+            line-height: 45px;
+
+            .introduction {
+                margin-top: -3px;
+                margin-bottom: 3px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 46px;
+
+            }
+        }
+
+        .icons {
+
+            .linkedin,
+            .github,
+            .instagram,
+            .email {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .main-container {
+        flex-direction: column;
+        width: 100%; // Ensure the container takes the full width
+    }
+
+    .main-img,
+    .main-content {
+        width: 100%; // Make them full width to stack vertically
+
     }
 }
