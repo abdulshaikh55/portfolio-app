@@ -1,6 +1,6 @@
 import React from "react";
 import './styles/Main.scss';
-import { GitHub, LinkedIn, Instagram } from '@mui/icons-material';
+import { GitHub, Instagram, LinkedIn } from '@mui/icons-material';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import anna from '../assets/anna.png'
 
@@ -9,7 +9,7 @@ export default function Main() {
     <div className="main" id="main">
       <div className="main-container">
         <div className="main-img">
-          <img src={anna} alt="Abdulfaiz Candid pic by Aryan Shinde" />
+          <img src={anna} alt="Abdulfaiz" />
         </div>
 
         <div className="main-content">
